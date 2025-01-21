@@ -17,9 +17,10 @@
 }
 
 /* shared Style start*/
-*{
+* {
     margin: 0;
 }
+
 .container-width {
     max-width: 1160px;
     margin: 0px auto;
@@ -55,7 +56,8 @@
 .nav-menu {
     display: none;
 }
-.nav-menu img{
+
+.nav-menu img {
     width: 30px;
     height: 30px;
 }
@@ -96,12 +98,13 @@
     font-size: 1.25rem;
     font-weight: 600;
     padding: 15px 61px;
-    color: white;
+    color: #FFFFFF;
     border-style: none;
     background-color: #FEA301;
     cursor: pointer;
 }
-.nav-bottom-line{
+
+.nav-bottom-line {
     border: 1px solid #FEA301;
     display: none;
 }
@@ -109,28 +112,33 @@
 /* nav related style end */
 
 /* hero style start */
-.hero-section{
+.hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* gap: 50px; */
 }
-.hero-title{
+
+.hero-title {
     font-size: 3.5rem;
     font-weight: 700;
 }
-.hero-orange{
+
+.hero-orange {
     color: #FEA301;
 }
-.hero-blue{
+
+.hero-blue {
     color: #01ACFD;
 }
-.hero-description{
+
+.hero-description {
     font-size: 1.25rem;
     margin: 24px 0px;
 }
-.hero-btn{
-    color: white;
+
+.hero-btn {
+    color: #FFFFFF;
     border-radius: 12px;
     font-size: 1.25rem;
     font-weight: 700;
@@ -139,42 +147,174 @@
     background-color: black;
     cursor: pointer;
 }
+
 /* hero style End */
+/* curriculum style start */
+.bg-dev {
+    background-image: url(../assets/bg.png);
+    /* background-position: 100vw; */
+    background-repeat: no-repeat;
+}
+
+.curriculum-section {
+    margin-bottom: 80px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.875rem;
+    font-weight: 700;
+    padding-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+
+}
+
+.card {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.card-1 {
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-2 {
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-3 {
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 32.5px 0px;
+}
+
+.card-description {
+    font-size: 0.93rem;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: "Raleway", serif;
+    margin-bottom: 34px;
+    color: #808080;
+}
+
+.card-read {
+    font-size: .93rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.read-1 {
+    color: #64C8FF;
+}
+
+.read-2 {
+    color: #F0AA00;
+}
+
+.read-3 {
+    color: #8700FF;
+}
+
+/* curriculum style End */
+
+.hide {
+    display: none;
+}
 
 @media screen and (max-width: 576px) {
 
     header,
     main {
-        margin: 0px 160.5px;
+        margin: 0px 16.5px;
     }
 
     .nav-menu,
     .nav-bottom-line {
         display: block;
     }
-.nav-section{
-    margin: 12px 16px;
-}
+
+    .nav-section {
+        margin: 12px 16px;
+    }
+
     .nav-logo h1,
     .navbar,
     .nav-btn {
         display: none;
     }
-.hero-section{
-    flex-direction: column-reverse;
-    margin-top: 20px;
-}
-.hero-text{
-   text-align: center;
-   margin-top: 20px;
-   margin-bottom: 20px;
-}
-.hero-title{
-    font-size: 2rem;
-    font-weight: 700;
-}
-.hero-description{
-    font-size: 0.875rem;
-    font-weight: 500;
-}
+
+    .hero-section {
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .hero-description {
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+    /* curriculum related */
+    .section-title {
+        font-size: 1.625rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 13px;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0px;
+        margin-top: 22px;
+    }
+
+    .card-description {
+        font-size: .625rem;
+        line-height: 19px;
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+
+    .curriculum-section {
+        margin-bottom: 0px;
+    }
 }
