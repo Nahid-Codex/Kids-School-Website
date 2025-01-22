@@ -256,10 +256,10 @@
 .stories-section {
     background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 
-}
+} 
 
 /* 1st container */
-.story-text-container {
+ .story-text-container {
     padding: 0px 68px 34px 38px;
 }
 
@@ -269,10 +269,10 @@
     font-size: 2.875rem;
     padding-top: 60px;
     margin-bottom: 80px;
-}
+} 
 
 /* story button style */
-.story-time-1 {
+ .story-time-1 {
     margin-left: 38px;
     position: relative;
     top: -30px;
@@ -298,11 +298,11 @@
 
 .story-time-1 button {
     padding: 15px 20px;
-}
+} 
 
 
 /* manin title */
-.storie-titile {
+ .storie-titile {
     font-size: .95rem;
     font-weight: 700;
     line-height: 28px;
@@ -322,49 +322,55 @@
     line-height: 28px;
     color: #666666;
     font-family: "Raleway", serif;
-}
+} 
 
 /* card related style */
-.story-card {
+ .story-card {
     border-radius: 16px;
     background: #FFFFFF;
     width: 291px;
     height: auto;
-}
+} 
 
-.story-card-1 {
+ .story-card-1 {
     width: 540px;
     height: auto;
 }
 
 .story-card img {
     border-radius: 16px 16px 0px 0px;
+    position: relative;
 }
 
 .stories-container {
     display: flex;
     gap: 19px;
-}
+} 
 
 .first-div {
-    display: flex;
+    display: grid;
     gap: 19px;
-}
+    grid-template-columns: repeat(2,1fr);
+} 
 
-.scound-div {
-    display: flex;
-    gap: 19px;
-    margin-top: 19px;
-}
-
-.story-btn-container {
+ .story-btn-container {
     text-align: center;
     margin-top: 80px;
     padding-bottom: 60px;
-}
+} 
 
 /* story section end */
 
+marquee{
+    font-size: 1.5rem;
+    padding: 8px 0px;
+    /* color: #FEA301; */
+    font-weight: 700;
+    background-color: yellow;
+}
+.marquee-container{
+    align-items: center;
+}
 /* footer section start */
 footer{
     background-color: #01ACFD;
@@ -423,7 +429,14 @@ footer{
 }
 /* footer section End */
 
+
 @media screen and (max-width: 576px) {
+    .hero-img img{
+        width: 100%;
+    }
+    .story-card img{
+        width: 100%;
+    }
 
     header,
     .bg-dev {
@@ -444,6 +457,7 @@ footer{
     .nav-btn {
         display: none;
     }
+    /* rero section */
 
     .hero-section {
         flex-direction: column-reverse;
@@ -464,6 +478,10 @@ footer{
     .hero-description {
         font-size: 0.875rem;
         font-weight: 500;
+        width: 357px;
+    }
+    .hero-img img{
+        width: 330px;
     }
 
     /* curriculum related */
@@ -505,7 +523,7 @@ footer{
     }
 
     /* stories related style */
-    .stories-title {
+     .stories-title {
         font-size: 1.8rem;
         margin-bottom: 20px;
         padding-top: 40px;
@@ -518,20 +536,19 @@ footer{
     .stories-container {
         justify-content: center;
     }
-
     .story-card-1 {
         display: none;
-    }
+    } 
 
     .story-card>img {
-        width: 220px;
+        width: 173px;
     }
 
     .story-card {
-        width: 220px;
-    }
+        width: 173px;
+    } 
 
-    .story-time {
+     .story-time {
         margin: 0;
     }
 
@@ -560,6 +577,9 @@ footer{
         margin-top: 20px;
         padding-bottom: 40px;
     }
+    marquee{
+        font-size: 1rem;
+    } 
     /* footer related */
     .footer{
         flex-direction: column;
@@ -568,5 +588,28 @@ footer{
     .footer-links{
         margin-top: 32px;
         margin-bottom: 32px;
+    }
+    .footer-logo h1{
+        font-size: 2.15rem;
+    }
+    .footer-description{
+        width: auto;
+        font-size: 1rem;
+        width: 400;
+    }
+    .footer-links h3{
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    .footer-link a{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .social-links h3{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .social-icon img{
+        margin-right: 1px;
     }
 }
